@@ -1,0 +1,1 @@
+export type { InferRequestType, InferResponseType, InferErrorType } from '@tuyau/client'

@@ -1,0 +1,12 @@
+{
+  "name": "@repo/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./index.js"
+  },
+  "devDependencies": {
+    "@adonisjs/eslint-config": "^2.0.0",
+    "eslint": "^9.22.0"
+  }
+}

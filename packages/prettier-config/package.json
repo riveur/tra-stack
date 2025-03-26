@@ -1,0 +1,14 @@
+{
+  "name": "@repo/prettier-config",
+  "type": "module",
+  "files": [
+    "index.json"
+  ],
+  "exports": {
+    ".": "./index.json"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@repo/rpc",
+  "type": "module",
+  "private": "true",
+  "exports": {
+    "./client": "./client.ts",
+    "./types": "./types.ts"
+  },
+  "dependencies": {
+    "@repo/server": "workspace:^",
+    "@tuyau/client": "^0.2.7"
+  }
+}

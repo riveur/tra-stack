@@ -1,0 +1,1 @@
+export { configApp, RULES_LIST } from '@adonisjs/eslint-config'

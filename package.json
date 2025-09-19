@@ -2,12 +2,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm run -r --parallel --aggregate-output dev"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev"
   },
   "author": "riveur",
   "license": "UNLICENSED",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "packageManager": "pnpm@10.17.0",
+  "devDependencies": {
+    "turbo": "^2.5.6"
+  }
 }

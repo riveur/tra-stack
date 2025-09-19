@@ -11,6 +11,7 @@ This is a monorepo thats use theses technologies:
 - [Prettier](https://prettier.io/) as code formatter
 - [Tuyau](https://tuyau.julr.dev/docs/introduction) as E2E typesafe client for AdonisJS
 - [PNPM](https://pnpm.io/) as package manager
+- [Turborepo](https://turbo.build/repo) as monorepo manager
 
 ## Getting started
 

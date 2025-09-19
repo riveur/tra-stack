@@ -6,9 +6,10 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "test": "vitest run",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "vitest run"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource/geist-sans": "^5.2.5",

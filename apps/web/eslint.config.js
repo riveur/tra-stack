@@ -5,4 +5,9 @@ export default configApp({
   files: ['**/*.tsx'],
   ignores: ['**/routeTree.gen.ts'],
   rules: RULES_LIST,
+  languageOptions: {
+    parserOptions: {
+      tsconfigRootDir: import.meta.dirname,
+    }
+  }
 })

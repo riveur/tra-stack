@@ -1,4 +1,4 @@
-FROM node:22.13-alpine3.21 AS base
+FROM node:lts-bookworm-slim AS base
 WORKDIR /app
 
 ARG VITE_API_URL

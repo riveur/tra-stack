@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "@repo/server": "workspace:^",
-    "@tuyau/client": "^0.2.7"
+    "@tuyau/client": "^0.2.10"
   }
 }

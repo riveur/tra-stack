@@ -2,6 +2,10 @@ packages:
   - apps/*
   - packages/*
 
+catalog:
+  eslint: ^9.32.0
+  prettier: ^3.6.2
+
 onlyBuiltDependencies:
   - '@swc/core'
   - '@tailwindcss/oxide'

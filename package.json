@@ -14,8 +14,8 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "pnpm@10.27.0",
+  "packageManager": "pnpm@10.31.0",
   "devDependencies": {
-    "turbo": "^2.7.3"
+    "turbo": "^2.8.14"
   }
 }

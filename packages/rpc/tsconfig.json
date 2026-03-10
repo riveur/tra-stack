@@ -12,12 +12,12 @@
 		"noImplicitThis": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"declaration": true,
 		"removeComments": true,
 		"sourceMap": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
 		"isolatedModules": true,
 		"skipLibCheck": true
 	}

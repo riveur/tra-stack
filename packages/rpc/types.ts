@@ -1,1 +1,1 @@
-export type { InferRequestType, InferResponseType, InferErrorType } from '@tuyau/client'
+export type { Path, Route } from '@tuyau/core/types'

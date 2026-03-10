@@ -3,8 +3,8 @@ packages:
   - packages/*
 
 catalog:
-  eslint: ^9.32.0
-  prettier: ^3.6.2
+  eslint: ^10.0.2
+  prettier: ^3.8.1
 
 onlyBuiltDependencies:
   - '@swc/core'

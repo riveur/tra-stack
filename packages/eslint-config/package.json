@@ -6,7 +6,7 @@
     ".": "./index.js"
   },
   "devDependencies": {
-    "@adonisjs/eslint-config": "^2.1.2",
+    "@adonisjs/eslint-config": "^3.0.0",
     "eslint": "catalog:"
   }
 }

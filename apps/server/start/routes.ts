@@ -1,7 +1,5 @@
 import router from '@adonisjs/core/services/router'
 
-router
-  .get('/', async ({ response }) => {
-    response.ok({ message: 'Hello world' })
-  })
-  .prefix('/api')
+import { controllers } from '#generated/controllers'
+
+router.get('/', [controllers.core.Hello]).prefix('/api')

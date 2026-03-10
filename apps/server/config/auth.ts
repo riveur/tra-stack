@@ -1,14 +1,36 @@
 import { defineConfig } from '@adonisjs/auth'
+import { sessionGuard, sessionUserProvider } from '@adonisjs/auth/session'
 import { tokensGuard, tokensUserProvider } from '@adonisjs/auth/access_tokens'
-import type { Authenticators, InferAuthenticators, InferAuthEvents } from '@adonisjs/auth/types'
+import type { InferAuthenticators, InferAuthEvents, Authenticators } from '@adonisjs/auth/types'
 
 const authConfig = defineConfig({
+  /**
+   * Default guard used when no guard is explicitly specified.
+   */
   default: 'api',
+
   guards: {
+    /**
+     * Token-based guard for stateless API authentication.
+     */
     api: tokensGuard({
       provider: tokensUserProvider({
         tokens: 'accessTokens',
-        model: () => import('#auth/models/user'),
+        model: () => import('#core/models/user'),
+      }),
+    }),
+
+    /**
+     * Session-based guard for browser authentication.
+     */
+    web: sessionGuard({
+      /**
+       * Enable persistent login using remember-me tokens.
+       */
+      useRememberMeTokens: false,
+
+      provider: sessionUserProvider({
+        model: () => import('#core/models/user'),
       }),
     }),
   },

@@ -1,7 +1,8 @@
 # Dependencies and AdonisJS build
 node_modules
 build
-tmp
+tmp/*
+!tmp/.gitkeep
 
 # Secrets
 .env
@@ -10,7 +11,7 @@ tmp
 .env.development.local
 
 # Frontend assets compiled code
-public
+public/assets
 
 # Build tools specific
 npm-debug.log
